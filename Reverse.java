@@ -32,11 +32,19 @@ final class Template {
     */
     public static void main(final String[] args) {
         // variables
-        final double some;
+        int someInt;
 
-        final Scanner userInput = new Scanner(System.in);
+        final Scanner input = new Scanner(System.in);
+        System.out.print("Input a integer: ");
 
-        if (
+        int someInt = input.nextInt();
+
+        if (someInt == 0) {
+             return someInt;
+
+        } else {
+             return someInt + (someInt - 1);
+        }
 
         System.out.println("\nDone.");
     }
