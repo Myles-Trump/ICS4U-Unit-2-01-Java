@@ -29,7 +29,7 @@ final class Reverse {
     * The reversing() function reverses strings.
     *
     * @return
-    * @param args No args will be used
+    * @param someString inputted string to be reversed
     */
     public static String reversing(String someString) {
         if (someString.length() == 0) {
