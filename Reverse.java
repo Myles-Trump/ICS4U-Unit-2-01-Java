@@ -26,7 +26,9 @@ final class Reverse {
     }
 
     /**
-    * The starting of reversing() function.
+    * The reversing() function reverses strings.
+    *
+    * @return
     */
     public static String reversing(String someString) {
         if (someString.length() == 0) {
@@ -45,7 +47,7 @@ final class Reverse {
     */
     public static void main(final String[] args) {
         // variables
-        String someString;
+        final String someString;
         String reversedString;
 
         final Scanner input = new Scanner(System.in);
