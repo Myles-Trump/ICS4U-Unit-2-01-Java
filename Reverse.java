@@ -11,7 +11,7 @@ import java.util.Scanner;
 /**
 * This is a program that reverses strings.
 */
-final class Template {
+final class Reverse {
 
     /**
     * Prevent instantiation.
@@ -21,8 +21,21 @@ final class Template {
     * @throws IllegalStateException
     *
     */
-    private Template() {
+    private Reverse() {
         throw new IllegalStateException("Cannot be instantiated");
+    }
+
+    /**
+    * The starting of reversing() function.
+    */
+    public static String reversing(String someString) {
+        if (someString.length() == 0) {
+            return (someString);
+
+        } else {
+            return reversing(someString.substring(1)) + someString.charAt(0);
+        }
+
     }
 
     /**
@@ -32,20 +45,18 @@ final class Template {
     */
     public static void main(final String[] args) {
         // variables
-        int someInt;
+        String someString;
+        String reversedString;
 
         final Scanner input = new Scanner(System.in);
-        System.out.print("Input a integer: ");
+        System.out.print("Input a string: ");
 
-        int someInt = input.nextInt();
+        someString = input.nextLine();
 
-        if (someInt == 0) {
-             return someInt;
+        reversedString = reversing(someString);
 
-        } else {
-             return someInt + (someInt - 1);
-        }
-
+        System.out.println("\nThe original string is : " + someString);
+        System.out.println("\nThe reversed string is : " + reversedString);
         System.out.println("\nDone.");
     }
 }
