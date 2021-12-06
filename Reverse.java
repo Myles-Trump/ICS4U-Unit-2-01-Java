@@ -31,7 +31,7 @@ final class Reverse {
     * @return
     * @param someString inputted string to be reversed
     */
-    public static String reversing(String someString) {
+    public static String reversing(final String someString) {
         if (someString.length() == 0) {
             return (someString);
 
