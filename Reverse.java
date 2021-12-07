@@ -28,7 +28,7 @@ final class Reverse {
     /**
     * The reversing() function reverses strings.
     *
-    * @return
+    * @return reversed string
     * @param someString inputted string to be reversed
     */
     public static String reversing(final String someString) {
